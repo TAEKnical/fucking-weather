@@ -1,10 +1,12 @@
 import React from "react"
 import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 
 export default function Loading(){
     return (
     <View style={styles.container}>
+        <StatusBar barStyle="dark-content" />
         <Text style={styles.text}>Getting the fucking weather</Text>
     </View>
     );
